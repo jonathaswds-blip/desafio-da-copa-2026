@@ -540,6 +540,13 @@ export default function App() {
   const [partialWinners, setPartialWinners] = useState([]);
 
   useEffect(() => {
+    if (!document.querySelector('meta[name="viewport"]')) {
+      const meta = document.createElement('meta');
+      meta.name = "viewport";
+      meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+      document.head.appendChild(meta);
+    }
+
     const loadFirebase = async () => {
       try {
         const scriptApp = document.createElement("script");
