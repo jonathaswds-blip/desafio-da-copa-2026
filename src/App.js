@@ -633,7 +633,7 @@ export default function App() {
 
         .app { 
           width: 100%; 
-          max-width: 480px; 
+          max-width: 650px; 
           min-height: 100vh; 
           background: #004D2C; 
           padding-bottom: 40px; 
