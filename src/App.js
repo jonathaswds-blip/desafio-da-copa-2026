@@ -626,14 +626,14 @@ export default function App() {
           background: #004D2C; 
           color: #f1f5f9; 
           min-height: 100vh; 
-          display: flex; 
-          justify-content: center; 
+          display: block;  
           letter-spacing: -0.01em;
         }
 
         .app { 
           width: 100%; 
-          max-width: 100%; 
+          max-width: 600px;
+          margin: 0 auto; 
           min-height: 100vh; 
           background: #004D2C; 
           padding-bottom: 40px; 
